@@ -1,4 +1,4 @@
-# SI-Unit-Conversion
+# SI Unit Conversion
 
 Provides SI defined unit conversion factors (in `conversion_factors` dictionary)
 and a general converter function (`convert()`) to use them.
