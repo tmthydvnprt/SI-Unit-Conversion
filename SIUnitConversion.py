@@ -3,9 +3,21 @@ SIUnitConversion.py
 
 Provides SI defined unit conversion factors (in `conversion_factors` dictionary)
 and a general converter function (`convert()`) to use them.
-
 The conversion factors used are defined in [Appendix B.9.](http://www.nist.gov/pml/pubs/sp811/appenb9.cfm)
 of the [NIST Guide to the SI](http://www.nist.gov/pml/pubs/sp811/).
+
+project    : SI-Unit-Conversion
+version    : 0.1.1
+status     : development
+modifydate : 2016-07-09 07:55:00 -0700
+createdate : 2016-07-09 07:39:00 -0700
+website    : https://github.com/tmthydvnprt/SI-Unit-Conversion
+author     : tmthydvnprt
+email      : tim@tmthydvnprt.com
+maintainer : tmthydvnprt
+license    : MIT
+copyright  : Copyright 2016, tmthydvnprt
+credits    : http://www.nist.gov/pml/pubs/sp811/
 
 """
 
