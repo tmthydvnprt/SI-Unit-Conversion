@@ -9,7 +9,7 @@ of the [NIST Guide to the SI](http://www.nist.gov/pml/pubs/sp811/).
 project    : SI-Unit-Conversion
 version    : 0.1.1
 status     : development
-modifydate : 2016-07-09 07:55:00 -0700
+modifydate : 2016-07-10 07:47:00 -0700
 createdate : 2016-07-09 07:39:00 -0700
 website    : https://github.com/tmthydvnprt/SI-Unit-Conversion
 author     : tmthydvnprt
@@ -251,7 +251,7 @@ conversion_factors = {
     'mi2km'                     : 1.609344e+00,  # mile (mi) to kilometer (km)
     'US_srvy_ft_mi2m'           : 1.609347e+03,  # mile (U.S. survey foot mi) to meter (m)
     'US_srvy_ft_mi2km'          : 1.609347e+00,  # mile (U.S. survey foot mi) to kilometer (km)
-    'nauticalmile2m'            : 1.852e+03,     # nautical mile (nautical mile) to meter (m)
+    'NM2m'                      : 1.852e+03,     # nautical mile (NM) to meter (m)
     'pc2m'                      : 3.085678e+16,  # parsec (pc) to meter (m)
     'computerpica2m'            : 4.233333e-03,  # pica (computer) (computer pica) to meter (m)
     'computerpica2mm'           : 4.233333e+00,  # pica (computer) (computer pica) to millimeter (mm)
