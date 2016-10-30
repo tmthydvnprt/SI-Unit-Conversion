@@ -535,11 +535,21 @@ def convert(value=0.0, from_unit='', to_unit=''):
     Out [1]: 1609.344
     """
 
-    factor_lookup = from_unit + '2' + to_unit
-    result = None
-    if conversion_factors.has_key(factor_lookup):
-        factor = conversion_factors[factor_lookup]
-        result = factor * value
+    if from_unit == to_unit:
+        result = value
     else:
-        raise KeyError('This unit conversion is undefined. See `conversion_factors` dictionary for valid conversions.')
+        factor_lookup = from_unit + '2' + to_unit
+        reverse_factor_lookup = to_unit + '2' + from_unit
+
+        factor = None
+        result = None
+        if conversion_factors.has_key(factor_lookup):
+            factor = conversion_factors[factor_lookup]
+            result = factor * value
+        else:
+            if conversion_factors.has_key(reverse_factor_lookup):
+                factor = 1.0 / conversion_factors[reverse_factor_lookup]
+                result = factor * value
+            else:
+                raise KeyError('This unit conversion is undefined. See `conversion_factors` dictionary for valid conversions.')
     return result
